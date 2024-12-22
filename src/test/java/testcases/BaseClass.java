@@ -42,7 +42,7 @@ public class BaseClass {
 			// Other type of metadata can be seen in the Grid UI by clicking on the 
 			// session info or via GraphQL
 			//chromeOptions.setCapability("se:sampleMetadata", "Sample metadata value"); 
-			driver = new RemoteWebDriver(new URL("http://192.168.0.103:4444"), cap);
+			driver = new RemoteWebDriver(new URL("http://192.168.0.108:6666"), cap);
 			
 			
 		}
