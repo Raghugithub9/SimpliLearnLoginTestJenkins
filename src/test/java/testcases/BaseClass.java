@@ -31,7 +31,7 @@ public class BaseClass {
 		}
 		else if(browserType.contains("remote")){
 			DesiredCapabilities cap = new DesiredCapabilities(); 
-			cap.setPlatform(Platform.WIN10); 
+			cap.setPlatform(Platform.WIN11); 
 			cap.setBrowserName("chrome"); 
 			//cap.setVersion("125.0.6422.141");
 			//ChromeOptions chromeOptions = new ChromeOptions();
