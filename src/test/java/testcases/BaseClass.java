@@ -24,10 +24,10 @@ public class BaseClass {
 		
 		String browserType=System.getProperty("Browser");
 		
-		if(browserType.contains("firefox")) {
+		if(browserType.contains("chrome")) {
 			
 		//System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
-		driver=new FirefoxDriver();
+		driver=new ChromeDriver();
 		}
 		else if(browserType.contains("remote")){
 			DesiredCapabilities cap = new DesiredCapabilities(); 
@@ -48,7 +48,8 @@ public class BaseClass {
 		}
 		else {
 			//System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
-			driver=new ChromeDriver();
+			
+			driver=new FirefoxDriver();
 		}
 		
 		driver.get("https://www.simplilearn.com/");
